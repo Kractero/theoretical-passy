@@ -205,16 +205,17 @@
       observeEmails('.v-Message')
       // GMAIL
     } else if (url.hostname === 'mail.google.com' && url.pathname.startsWith('/mail/')) {
-      window.addEventListener('hashchange', () => {
-        const links = document.querySelectorAll('a')
-        for (const link of links) {
-          console.log(link)
-          const result = NS_LINK_REGEX.exec(link.href)
-          if (!result) continue
-          addApplication(result[1], '')
-          break
-        }
-      })
+      observeEmails('.ads')
+      // window.addEventListener('hashchange', () => {
+      //   const links = document.querySelectorAll('a')
+      //   for (const link of links) {
+      //     const result = NS_LINK_REGEX.exec(link.href)
+      //     if (!result) continue
+      //     addApplication(result[1], '')
+      //     break
+      //   }
+      // })
+      // NOT
       // NOT
     } else {
       console.log('Email service not explicitly handled.')

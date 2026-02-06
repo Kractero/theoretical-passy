@@ -7,6 +7,8 @@ Does not support multi-password, but if you know which ones have which, you can 
 
 2. Then, go to your email client, and collect the password reset emails. At the moment, it just collects the asnation page on an apocalypse email, I have no idea what the password reset email will look like.
 
+3. After collecting, go back to page=blank/passy and hit download sheet. Open the sheet, and click a link or open next link. The switching logic from scs should then begin to process. No autoclose logic, reliant on knowing what to expect from the html.
+
 Supported Clients:
 
 1. Gmail
